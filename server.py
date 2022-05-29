@@ -16,8 +16,8 @@ while True:
         tweet = f"{new[0]['title']}\nRead more:  {str(new[0]['link'])}\n #barcanews #barcabajeh"
         img = new[0]['image_url']
         bajeh_api.update_status_with_media(tweet, get_img(img))
-        time.sleep(15)
+        time.sleep(900)
     else: 
         print("News not updated yet!\nWaiting....")
-        time.sleep(15)
+        time.sleep(900)
         continue
