@@ -23,7 +23,7 @@ def get_article() -> dict:
         
 
 if __name__ == "__main__":
-    arts = [ i for i in get_article()]
+    arts = get_article()
     with open('art.json', 'w') as f:
-        json.dump(arts[0], f, indent=4)
-    print("Saved:", arts[0]['title'])
+        json.dump(arts, f, indent=4)
+    print("Saved:", arts['title'])

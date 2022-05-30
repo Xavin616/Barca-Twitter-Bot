@@ -11,6 +11,8 @@ b_access_secret = "pPARpIWF1OnXNPg8BmqA3Wnf6zAYmYZP9AnGdOt59KSiS"
 bauth = tweepy.OAuth1UserHandler(consumer_key, consumer_secret, b_access_token, b_access_secret)
 bajeh_api = tweepy.API(bauth)
 
+filename = 'coffee.jpg'
+
 def get_img(url) -> str:
     res = rq.get(url, stream=True)
     if res.status_code == 200:
